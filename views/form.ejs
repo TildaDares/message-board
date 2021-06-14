@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form method="POST" action="/new">
+      <label for="message">Message</label>
+      <input
+        type="text"
+        name="message"
+        placeholder="Enter your message"
+        required
+      />
+      <label for="author">Author</label>
+      <input type="text" name="author" placeholder="Enter your name" required />
+      <button type="submit" name="submit" class="submit">Add message</button>
+    </form>
+  </body>
+</html>

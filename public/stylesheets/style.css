@@ -1,8 +1,79 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #edf2f7;
 }
 
-a {
-  color: #00B7FF;
+main,
+form {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: green;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#messages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.message {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.msg-text {
+  font-size: 1.2rem;
+}
+
+.msg-user {
+  float: right;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.submit {
+  color: white;
+  background-color: green;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  float: right;
+}
+
+.new-link {
+  float: right;
 }
